@@ -1,0 +1,8 @@
+﻿/*give the body some room from the header*/
+body {
+    margin-top:50px;
+}
+/*give the footer some room from the results panel*/
+footer{
+    margin-top:50px;
+}

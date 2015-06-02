@@ -1,0 +1,45 @@
+﻿<%--Benjamin Vanarragon
+June 1st. 2015
+This is the master page file, every page on the website that references this as their master page will have the same header and footer--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="games.master.cs" Inherits="assignment1.games" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Assignment 1</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<body>
+    <%--this is the navbar, using the foundation css--%>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <a href="default.aspx" class="navbar-brand">Assignment 1</a>
+    </nav>
+    <form id="form1" runat="server" class="form-horizontal">
+    <div>
+        <%--this is the main content from default.aspx--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <%--footer using foundation css--%>
+        <footer class="panel-footer">
+            <div class="text-center">
+                @2015 Wednesday May 27th
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
